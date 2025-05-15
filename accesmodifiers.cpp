@@ -5,7 +5,7 @@ using namespace std;
 class student
 {
 private:
-    float marks;
+    float marks; //Data Hiding
 
 public:
     string name;
@@ -34,4 +34,4 @@ int main()
 
     cout << "name of the student is: " << s1.name << endl;
     cout << "Marks of the student is: " << s1.getmarks() << endl;
-};
+}; 
