@@ -32,7 +32,7 @@ int main(){
 
     if(marks>=90){
         cout<<"A grade";
-    } else if(marks>=75){
+    } else if(marks>=75 && marks<90){
         cout<<"B grade";
     } else{
         cout<<"C grade";
