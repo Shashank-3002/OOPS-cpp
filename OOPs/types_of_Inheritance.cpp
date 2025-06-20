@@ -172,3 +172,34 @@ int main()
     g1.getInfo();
     return 0;
 }
+
+
+// //4. Hybrid inheritance
+// #include<iostream>
+// using namespace std;
+
+// class Person{                        //Parent class person
+// public:
+//     string name;
+//     int age;
+// };
+
+// class Student : public Person{       //Child class-1 Student which inherits properties from Parent class Person
+// public:
+//     int usn;
+// };
+
+// class Teacher : public Person{       //Child class-2 Teacher which inherits properties from Parent class Person
+// public:
+//     float salary;
+// };
+
+// int main(){
+//     Teacher t1;
+//     t1.name="Shashank";
+//     t1.age=21;
+//     t1.salary=40000000;
+//     cout<<"Name: "<<t1.name <<endl <<"Age: "<<t1.age <<endl <<"Salary: "<<t1.salary <<endl;
+
+//     return 0;
+// }
