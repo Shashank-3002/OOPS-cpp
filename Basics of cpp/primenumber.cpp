@@ -9,7 +9,7 @@ int main(){
 
     for(int i=2; i<=n-1; i++){
         if(n%i==0){
-            isPrime=false;
+            isPrime=false; //Once the given number is divisible by any number other than 1 and itself, it is not a prime number
             break;
         }
     }

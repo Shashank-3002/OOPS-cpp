@@ -19,15 +19,15 @@ int main(){
     cin>>age;
 
     if(age >= 18){
-        cout<<"You can vote\n";
+        cout<<"The person is Major and he/she can vote.\n";
     } else {
-        cout<<"You can't vote\n";
+        cout<<"The person is Minor and he/she can't vote.\n";
     }
 
     //assigning grade using if-elseif-else statements
 
     int marks;
-    cout<< "Enter your marks: ";
+    cout<< "Enter the marks: ";
     cin>>marks;
 
     if(marks>=90){
