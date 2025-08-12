@@ -4,9 +4,12 @@ using namespace std;
 int main(){
     int size = 10;
     int arr[size] = {10,25,36,-40,12,-2,42,96,12,-42};
+    // Display the size of the array in bytes and the number of elements
+    cout<<sizeof(arr) << " bytes" << endl; // Display the size of the array in bytes
+    cout << "Size of array: " << sizeof(arr)/sizeof(int) << endl; // Display the size of the array incase of unknown size at compile time
+
     // Display the array elements
     cout << "Array elements: ";
-
     // Accessing and displaying array elements
     //Accessing of elements in an array is done using the index
     // Index starts from 0 to size-1 
@@ -24,11 +27,8 @@ int main(){
         if(arr[i] < smallest){
             smallest = arr[i];
         }
-        // If current element is greater than largest, update largest
         if(arr[i] > largest){
             largest = arr[i];
-            // Index of largest element can be found using i
-            cout << "Largest element found at index: " << i << endl;
         }
     }
 
@@ -40,23 +40,6 @@ int main(){
     //     largest = max(largest, arr[i]); // Using STL max function to find largest
     // }
     
-    //Index of smallest element can be found using the index of smallest
-    cout << "Smallest element found at index: ";
-    for(int i = 0; i < size; i++){
-        if(arr[i] == smallest){
-            cout << i << endl;
-            break; // Break after finding the first occurrence
-        }
-    }
-    //Index of largest element can be found using the index of largest
-    cout << "Largest element found at index: ";
-    for(int i = 0; i < size; i++){
-        if(arr[i] == largest){
-            cout << i << endl;
-            break; // Break after finding the first occurrence
-        }
-    }
-
     // Display the smallest and largest elements
     cout << "Smallest element: " << smallest << endl;
     cout << "Largest element: " << largest <<endl;
