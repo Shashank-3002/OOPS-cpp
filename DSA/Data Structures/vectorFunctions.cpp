@@ -28,15 +28,17 @@ int main(){
 
     cout << "Front element of vector: " << arr.front() << endl; // Displaying the first element of the vector
     cout << "Back element of vector: " << arr.back() << endl; // Displaying the last element of the vector
-    cout <<"Elements in vector using at(): ";
+    
     for(size_t i = 0; i < arr.size(); i++) {
-        cout << arr.at(i) << " "; // Displaying elements using at() method
+        cout <<"Element in the vector at " << i << " is: ";
+        cout << arr.at(i) << " " <<endl; // Displaying elements using at() method
     }
-    cout << endl;
 
-
+    //Size and capacity of the vector
     cout << "Size of vector: " << arr.size() << endl; // Displaying the size of the vector
     cout << "Capacity of vector: " << arr.capacity() << endl; // Displaying the capacity of the vector
+    
+    
     arr.clear(); // Clearing the vector
     cout << "Size of vector after clearing: " << arr.size() << endl; // Displaying the size after clearing
     return 0; // Return 0 to indicate successful execution
