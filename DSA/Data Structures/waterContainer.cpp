@@ -13,4 +13,12 @@ int waterContainer(int arr[], int height){
         }
     }
     return maxwater;
+};
+
+int main(){
+    int arr = [10,7,3,5,12,6,8];
+    int height = arr[i];
+    waterContainer(arr,height);
+    cout<< "The maximum water container: " << waterContainer<<endl;
+    return 0;
 }
